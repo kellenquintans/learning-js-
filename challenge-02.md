@@ -45,7 +45,7 @@ function args(a, b, c) {
   if(a === undefined || b === undefined || c === undefined) {
     return 'Preencha todos os valores corretamente!';
   } else {
-	return (a * b * c) + 2;
+    return (a * b * c) + 2;
   }
 }
 ```
