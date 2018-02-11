@@ -77,7 +77,7 @@ pessoa.mostrarAltura = function() {
 ```
 **Agora vamos brincar um pouco com o objeto criado: Qual o nome completo da pessoa? (Use a instrução para responder e comentários inline ao lado da instrução para mostrar qual foi a resposta retornada)**
 ```js
-pessoa.nomeCompleto(); // 'Olá! Meu nome é kellen quintans!'
+pessoa.nomeCompleto(); // 'Olá! Meu nome é Kellen Quintans!'
 ```
 **Qual a idade da pessoa? (Use a instrução para responder e comentários
 inline ao lado da instrução para mostrar qual foi a resposta retornada)**
