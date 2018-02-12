@@ -102,8 +102,7 @@ carro.addPessoa = function(nPessoa) {
     if(qtd > carro.assentos) {   
 	var newQtd = carro.assentos - carro.quantidadedePessoas;     
     	var newPessoa = carro.quantidadedePessoas === 1 ? 'pessoa' : 'pessoas';
-	var newAssentos = carro.assentos - carro.quantidadedePessoas === 1 ? 'cabe' : 'cabem';
-	return 'Só ' +(newAssentos)+ ' mais ' +(newQtd)+ ' ' +(newPessoa)+ '!';
+	return 'Só cabem mais ' +(newQtd)+ ' ' +(newPessoa)+ '!';
     };
     
     carro.quantidadedePessoas += nPessoa;
