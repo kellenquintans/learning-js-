@@ -92,21 +92,22 @@ carro.obterMarcaModelo = function() {
 - Se ainda houverem lugares no carro, mas a quantidade de pessoas passadas por parâmetro for ultrapassar o limite de assentos do carro, então você deve mostrar quantos assentos ainda podem ser ocupados, com a frase:
 "Só cabem mais [QUANTIDADE_DE_PESSOAS_QUE_CABEM] pessoas!" - Se couber somente mais uma pessoa, mostrar a palavra "pessoa" no retorno citado acima, no lugar de "pessoas".
 ```js
-carro.addPessoas = function(nPessoas) {
-  var qtd = carro.quantidadedePessoas + nPessoas;
+carro.addPessoa = function(nPessoa) {
+    var qtd = carro.quantidadedePessoas + nPessoa;
     
-  if(carro.quantidadedePessoas === carro.assentos && qtd >= carro.assentos) {
-    return 'O carro já está lotado!';
-  };
+    if(carro.quantidadedePessoas === carro.assentos && qtd >= carro.assentos) {
+        return 'O carro já está lotado!';
+    };
     
-  if(qtd > carro.assentos) {   
-    var newQtd = carro.assentos - carro.quantidadedePessoas;     
-    var newPessoas = carro.quantidadedePessoas === 1 ? 'pessoa' : 'pessoas';
-    return 'Só cabem mais ' +(newQtd)+ ' ' +(newPessoas)+ '!';
-  };
+    if(qtd > carro.assentos) {   
+		var newQtd = carro.assentos - carro.quantidadedePessoas;     
+    var newPessoa = carro.quantidadedePessoas === 1 ? 'pessoa' : 'pessoas';
+		var newAssentos = carro.assentos - carro.quantidadedePessoas === 1 ? 'cabe' : 'cabem';
+	 	return 'Só ' +(newAssentos)+ ' mais ' +(newQtd)+ ' ' +(newPessoa)+ '!';
+    };
     
-  carro.quantidadedePessoas += nPessoas;
-  return 'Já temos ' +(qtd)+ ' pessoas no carro!';
+    carro.quantidadedePessoas += nPessoa;
+    return 'Já temos ' +(carro.quantidadedePessoas)+ ' pessoas no carro!';
 };
 ```
 **Agora vamos verificar algumas informações do carro. Para as respostas abaixo, utilize sempre o formato de invocação do método (ou chamada da propriedade), adicionando comentários _inline_ ao lado com o valor retornado, se o método retornar algum valor.**
