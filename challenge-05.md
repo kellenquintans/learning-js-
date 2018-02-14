@@ -71,13 +71,14 @@ console.log(book());
 ```
 **Ainda com a função acima, imprima a quantidade de páginas de um livro qualquer, usando a frase: "O livro [NOME_DO_LIVRO] tem [X] páginas!"**
 ```js
-console.log('O livro Extraordinário tem '+book('Extraordinário').quantidadedePaginas+' páginas!');
+var names = 'Extraordinário';
+console.log('O livro '+names+' tem '+book(names).quantidadedePaginas+' páginas!');
 ```
 **Ainda com a função acima, imprima o nome do autor de um livro qualquer, usando a frase: "O autor do livro [NOME_DO_LIVRO] é [AUTOR]."**
 ```js
-console.log('O autor do livro Extraordinário é '+book('Extraordinário').autor+'.');
+console.log('O autor do livro '+names+' é '+book(names).autor+'.');
 ```
 **Ainda com a função acima, imprima o nome da editora de um livro qualquer, usando a frase: "O livro [NOME_DO_LIVRO] foi publicado pela editora [NOME_DA_EDITORA]."**
 ```js
-console.log('O livro Extraordinário foi publicado pela editora '+book('Extraordinário').editora+'.');
+console.log('O livro '+names+' foi publicado pela editora '+book(names).editora+'.');
 ```
