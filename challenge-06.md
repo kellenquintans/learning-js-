@@ -28,9 +28,9 @@ console.log( 'Times que estão participando do campeonato ' +championship+ ':', 
 ```js
 function showTeamPosition(index) {
     if(index < 1 || index > 5) {
-	    return ('Não temos a informação do time que está nessa posição.');
+	return ('Não temos a informação do time que está nessa posição.');
     };
-	    return ('O time que está em '+index+'º lugar é o '+(teams[index - 1])+'.');
+    	return ('O time que está em '+index+'º lugar é o '+(teams[index - 1])+'.');
 };
 ```
 
@@ -82,10 +82,10 @@ function convertToHex(cor) {
             break;
 
         default:
-			return ('Não temos o equivalente hexadecimal para '+cor+'.');
-              };
+	return ('Não temos o equivalente hexadecimal para '+cor+'.');
+	};
 			
-			return ('O hexadecimal para a cor '+cor+' é '+hexadecimal+'.');
+	return ('O hexadecimal para a cor '+cor+' é '+hexadecimal+'.');
 };
 ```
 **Tente mostrar o hexadecimal de 8 cores diferentes usando a função criada acima.**
