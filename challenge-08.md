@@ -72,7 +72,7 @@ function calculator(ope) {
                 result = x % y;
                 break;
                 default:
-				return 'Operação inválida.';
+		return 'Operação inválida.';
             };
 	return ('Resultado da operação: '+x+' '+ope+' '+y+' = '+result+'.');
     };
